@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Connected</title><link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<h1>TikTok <em>sign-in</em></h1>
+<p>Copy this whole address and paste it to Claude (it goes into <code>publish.py tiktok-auth-code</code>).</p>
+<div class="box" id="url"></div>
+<button id="copy">Copy address</button> <span class="muted" id="done"></span>
+<script>
+  const u = location.href;
+  document.getElementById('url').textContent = u;
+  document.getElementById('copy').onclick = () => navigator.clipboard.writeText(u).then(() => { document.getElementById('done').textContent = 'Copied.'; });
+</script>
+</main></body></html>
