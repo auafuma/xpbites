@@ -8,3 +8,4 @@ p, li { color: var(--text); } .muted { color: var(--muted); font-size: .9rem; }
 a { color: var(--lime); } nav a { margin-right: 16px; }
 .box { background: var(--surface); border-radius: 8px; padding: 16px; word-break: break-all; }
 button { background: var(--lime); color: #05040c; border: 0; border-radius: 6px; padding: 10px 16px; font-weight: 700; cursor: pointer; margin-top: 12px; }
+.yt { border-left: 4px solid #ff0000; margin: 24px 0; word-break: normal; } .yt p { margin: 0 0 8px; } .yt p:last-child { margin: 0; }
